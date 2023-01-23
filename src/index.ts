@@ -15,9 +15,9 @@ function record(amplitude: number = 0.5) {
 
     let line = `\n`;
     line += `${sim.time},`;
-    line += `${sim.fitnessSums[0]},`;
-    line += `${sim.fitnessSums[1]},`;
-    line += `${sim.fitnessSums[2] || 0},`;
+    line += `${sim.avgFitnessSums[0]},`;
+    line += `${sim.avgFitnessSums[1]},`;
+    line += `${sim.avgFitnessSums[2] || 0},`;
     data += line;
   }
 
@@ -25,6 +25,6 @@ function record(amplitude: number = 0.5) {
   writeFileSync(join(__dirname, `../data/amp-${amp}.csv`), data);
 }
 
-for (let amp = 0; amp <= 1; amp += 0.01) {
+for (let amp = 0; amp <= 10; amp += 0.1) {
   record(amp);
 }
