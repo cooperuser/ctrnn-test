@@ -1,6 +1,8 @@
 node_modules/
 lib/
 data/
+data_old/
 wandb/
+__pycache__/
 
 yarn.lock
