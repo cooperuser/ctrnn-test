@@ -1,7 +1,7 @@
 import { RlCtrnn } from "ctrnn.js";
 
 const DT = 0.05;
-const QUEUE_DURATION = 2;
+const QUEUE_DURATION = 5;
 const QUEUE_LENGTH = QUEUE_DURATION / DT;
 
 export default class Simulation {
