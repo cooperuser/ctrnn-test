@@ -2,6 +2,7 @@ node_modules/
 lib/
 data/
 data_old/
+data.csv
 wandb/
 __pycache__/
 
